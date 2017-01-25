@@ -1,6 +1,7 @@
 package common;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -9,9 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -44,7 +43,7 @@ public class Base {
 
 
         @Parameters({"OS","appType","deviceType", "deviceName","version"})
-        @BeforeMethod
+        @BeforeClass
         public void setUp(String OS,String appType,String deviceType,String deviceName,
                           String version)throws IOException,InterruptedException{
 
@@ -144,7 +143,15 @@ public class Base {
             }
         }
 
+        @BeforeMethod
+        public void setUp(){
+            ad.launchApp();
+        }
         @AfterMethod
+        public void tearDown(){
+            ad.closeApp();
+        }
+        @AfterClass
         public void cleanUpApp(){
             ad.quit();
         }
@@ -175,4 +182,14 @@ public class Base {
 
             return text;
         }
+    public static void scrollKeys(AppiumDriver driver, String[] list, String parent) {
+        System.out.println("Starting the process");
+        for (int i = 0; i < list.length; i++) {
+            MobileElement we = (MobileElement) driver.findElementByXPath(parent+"/UIAPickerWheel["+(i+1)+"]");
+            we.sendKeys(list[i]);
+        }
+        System.out.println("Ending Process");
     }
+
+}
+
