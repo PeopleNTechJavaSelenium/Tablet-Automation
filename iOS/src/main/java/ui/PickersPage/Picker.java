@@ -1,8 +1,6 @@
 package ui.PickersPage;
 
 import common.Base;
-import common.Scroll;
-import io.appium.java_client.MobileElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

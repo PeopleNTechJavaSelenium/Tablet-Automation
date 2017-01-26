@@ -12,7 +12,8 @@
         <classes>
             <!--<class name="iPhone.ButtonTest"/>-->
             <!--<class name="iPhone.TextFieldsTest"/>-->
-            <class name="iPhone.TestPicker"/>
+            <!--<class name="iPhone.PickerTest"/>-->
+            <class name="iPhone.AlertsTest"/>
         </classes>
     </test>
 </suite>

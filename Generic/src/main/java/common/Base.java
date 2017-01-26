@@ -1,6 +1,7 @@
 package common;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -8,8 +9,11 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.io.File;
@@ -43,7 +47,7 @@ public class Base {
 
 
         @Parameters({"OS","appType","deviceType", "deviceName","version"})
-        @BeforeClass
+        @BeforeMethod
         public void setUp(String OS,String appType,String deviceType,String deviceName,
                           String version)throws IOException,InterruptedException{
 
@@ -143,15 +147,7 @@ public class Base {
             }
         }
 
-        @BeforeMethod
-        public void setUp(){
-            ad.launchApp();
-        }
         @AfterMethod
-        public void tearDown(){
-            ad.closeApp();
-        }
-        @AfterClass
         public void cleanUpApp(){
             ad.quit();
         }
@@ -189,6 +185,19 @@ public class Base {
             we.sendKeys(list[i]);
         }
         System.out.println("Ending Process");
+    }
+    public void scrollToElement(AppiumDriver driver, String text){
+            MobileElement we = (MobileElement) driver.findElementByXPath(text);
+            driver.scrollTo(we.getText());
+    }
+    public void alertAccept(WebDriver driver){
+        WebDriverWait wait = new WebDriverWait(driver,5);
+        try{
+            wait.until(ExpectedConditions.alertIsPresent());
+            driver.switchTo().alert().accept();
+        }catch (Exception e){
+            System.err.println("No alert visible in 5 seconds");
+        }
     }
 
 }

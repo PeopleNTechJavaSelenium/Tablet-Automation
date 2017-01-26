@@ -9,7 +9,7 @@ import ui.UiCatalogPage.UiCatalog;
 /**
  * Created by Bilal on 24-01-2017.
  */
-public class TestPicker extends Base {
+public class PickerTest extends Base {
     String[] pickerName = {"Chris Armstrong","3"};
     String[] pickerDate = {"March","10","2018"};
     public Picker picker(){
