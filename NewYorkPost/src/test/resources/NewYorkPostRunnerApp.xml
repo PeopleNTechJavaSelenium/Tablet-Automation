@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HomePage test suite on HomePage Phone">
+
+    <parameter name="OS" value="HomePage"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <parameter name="deviceName" value="Nexus"/>
+    <parameter name="version" value="5.0.2"/>
+
+    <test name="Test Main Menu" preserve-order="true">
+        <classes>
+            <class name="HomePage.MainMenuTest"/>
+        </classes>
+    </test>
+
+    <!-- Test1 specific params are defined below this-->
+    <parameter name="appName" value="nyp.apk"/>
+</suite>

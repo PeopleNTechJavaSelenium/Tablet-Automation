@@ -99,9 +99,9 @@ public class Base {
                     }
                 }
 
-            }else if(OS.contains("Android")){
+            }else if(OS.contains("HomePage")){
                 if(appType.contains("Phone")){
-                    appDirectory = new File("Android/src/app");
+                    appDirectory = new File("HomePage/src/app");
                     findApp = new File(appDirectory,appName);
                     if(deviceType.equalsIgnoreCase("RealDevice")){
                         cap = new DesiredCapabilities();
