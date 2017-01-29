@@ -46,10 +46,10 @@ public class Base {
         public DesiredCapabilities cap = null;
 
 
-        @Parameters({"OS","appType","deviceType", "deviceName","version"})
+        @Parameters({"OS","appType","deviceType", "deviceName","version","appName"})
         @BeforeMethod
         public void setUp(String OS,String appType,String deviceType,String deviceName,
-                          String version)throws IOException,InterruptedException{
+                          String version,String appName)throws IOException,InterruptedException{
 
             if(OS.equalsIgnoreCase("ios")){
                 if(appType.contains("iPhone")){
@@ -102,7 +102,7 @@ public class Base {
             }else if(OS.contains("Android")){
                 if(appType.contains("Phone")){
                     appDirectory = new File("Android/src/app");
-                    findApp = new File(appDirectory,"snapchat.apk");
+                    findApp = new File(appDirectory,appName);
                     if(deviceType.equalsIgnoreCase("RealDevice")){
                         cap = new DesiredCapabilities();
                         cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
@@ -120,7 +120,7 @@ public class Base {
                         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);
                         cap.setCapability(MobileCapabilityType.APP, findApp.getAbsolutePath());
                         ad = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-                        ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                        ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
                     }
 
                 }else if(OS.equalsIgnoreCase("Tablets")){
@@ -149,7 +149,7 @@ public class Base {
 
         @AfterMethod
         public void cleanUpApp(){
-            ad.quit();
+            ad.closeApp();
         }
 
         public void clickByXpath(String locator){
