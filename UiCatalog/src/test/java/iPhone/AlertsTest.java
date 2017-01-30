@@ -3,8 +3,8 @@ package iPhone;
 import common.Base;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import HomePage.AlertsPage.Alerts;
-import HomePage.UiCatalogPage.UiCatalog;
+import HomePageTest.AlertsPage.Alerts;
+import HomePageTest.UiCatalogPage.UiCatalog;
 
 /**
  * Created by Bilal on 25-01-2017.

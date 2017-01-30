@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="HomePage test suite on HomePage Phone">
+<suite name="HomePageTest test suite on Nexus4 Emulator">
 
-    <parameter name="OS" value="HomePage"/>
+    <parameter name="OS" value="Android"/>
     <parameter name="appType" value="Phone"/>
     <parameter name="deviceType" value="Emulator"/>
     <parameter name="deviceName" value="Nexus"/>
-    <parameter name="version" value="5.0.2"/>
+    <parameter name="version" value="5.0.1"/>
+    <parameter name="moduleName" value="NewYorkPost"/>
+    <parameter name="appName" value="nyp.apk"/>
 
     <test name="Test Main Menu" preserve-order="true">
         <classes>
-            <class name="HomePage.MainMenuTest"/>
+            <class name="HomePageTest.MainMenuTest"/>
         </classes>
     </test>
 
     <!-- Test1 specific params are defined below this-->
-    <parameter name="appName" value="nyp.apk"/>
+    <parameter name="" value=""/>
 </suite>

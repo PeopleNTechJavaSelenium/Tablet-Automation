@@ -2,8 +2,8 @@ package iPhone;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import HomePage.NavigateUi;
-import HomePage.UiCatalogPage.UiCatalog;
+import HomePageTest.NavigateUi;
+import HomePageTest.UiCatalogPage.UiCatalog;
 
 /**
  * Created by mrahman on 9/5/15.

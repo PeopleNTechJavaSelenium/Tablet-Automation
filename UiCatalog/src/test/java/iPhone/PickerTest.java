@@ -3,8 +3,8 @@ package iPhone;
 import common.Base;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import HomePage.PickersPage.Picker;
-import HomePage.UiCatalogPage.UiCatalog;
+import HomePageTest.PickersPage.Picker;
+import HomePageTest.UiCatalogPage.UiCatalog;
 
 /**
  * Created by Bilal on 24-01-2017.

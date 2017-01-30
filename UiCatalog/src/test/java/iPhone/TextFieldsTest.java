@@ -2,9 +2,9 @@ package iPhone;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import HomePage.NavigateUi;
-import HomePage.TextFieldsPage.TextFields;
-import HomePage.UiCatalogPage.UiCatalog;
+import HomePageTest.NavigateUi;
+import HomePageTest.TextFieldsPage.TextFields;
+import HomePageTest.UiCatalogPage.UiCatalog;
 
 /**
  * Created by mrahman on 1/15/17.

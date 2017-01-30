@@ -46,10 +46,10 @@ public class Base {
         public DesiredCapabilities cap = null;
 
 
-        @Parameters({"OS","appType","deviceType", "deviceName","version","appName"})
+        @Parameters({"OS","appType","deviceType", "deviceName","version","moduleName","appName"})
         @BeforeMethod
         public void setUp(String OS,String appType,String deviceType,String deviceName,
-                          String version,String appName)throws IOException,InterruptedException{
+                          String version,String moduleName,String appName)throws IOException,InterruptedException{
 
             if(OS.equalsIgnoreCase("ios")){
                 if(appType.contains("iPhone")){
@@ -99,9 +99,9 @@ public class Base {
                     }
                 }
 
-            }else if(OS.contains("HomePage")){
+            }else if(OS.equalsIgnoreCase("Android")){
                 if(appType.contains("Phone")){
-                    appDirectory = new File("HomePage/src/app");
+                    appDirectory = new File(moduleName+"/src/app");
                     findApp = new File(appDirectory,appName);
                     if(deviceType.equalsIgnoreCase("RealDevice")){
                         cap = new DesiredCapabilities();
@@ -149,7 +149,7 @@ public class Base {
 
         @AfterMethod
         public void cleanUpApp(){
-            ad.closeApp();
+            ad.quit();
         }
 
         public void clickByXpath(String locator){
