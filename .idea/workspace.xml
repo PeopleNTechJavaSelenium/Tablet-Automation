@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15608437-e425-424c-b71f-f36cfcc8d041" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UiCatalog/target/classes/ui/NavigateUi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UiCatalog/target/classes/ui/TextFieldsPage/TextFields.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UiCatalog/target/classes/ui/UiCatalogPage/UiCatalog.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UiCatalog/target/test-classes/iPhone/ButtonTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UiCatalog/target/test-classes/iPhone/TextFieldsTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePageTest/UiMainPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewYorkPost/src/test/java/HomePageTest/MainMenuTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Business.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Entertainment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Fashion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Living.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Media.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Metro.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/News.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Opinion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/PageSix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/SavedStories.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/Sports.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/MainMenu/TopStories.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/main/java/HomePage/UiMainPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/test/java/HomePage/MainMenuTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NewYorkPost/src/test/resources/snapChatAppTestRunner.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/AlertsPage/Alerts.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/AlertsPage/Alerts.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/ButtonsPage/Buttons.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/ButtonsPage/Buttons.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/ControlsPage/Controls.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/ControlsPage/Controls.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/ImgesPage/Images.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/ImgesPage/Images.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/NavigateUi.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/NavigateUi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/PickersPage/Picker.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/PickersPage/Picker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/SearchBarPage/SearchBar.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/SearchBarPage/SearchBar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/SegmentsPage/Segments.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/SegmentsPage/Segments.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/TextFieldsPage/TextFields.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/TextFieldsPage/TextFields.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/TextViewPage/TextView.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/TextViewPage/TextView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/ToolbarPage/Toolbar.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/ToolbarPage/Toolbar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/TransitionsPage/Transitions.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/TransitionsPage/Transitions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/UiCatalogPage/UiCatalog.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/UiCatalogPage/UiCatalog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePage/WebPage/Web.java" afterPath="$PROJECT_DIR$/UiCatalog/src/main/java/HomePageTest/WebPage/Web.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/target/classes/common/Base.class" afterPath="$PROJECT_DIR$/Generic/target/classes/common/Base.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/src/main/java/common/Base.java" afterPath="$PROJECT_DIR$/Generic/src/main/java/common/Base.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewYorkPost/NewYorkPost.iml" afterPath="$PROJECT_DIR$/NewYorkPost/NewYorkPost.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewYorkPost/src/test/resources/NewYorkPostRunnerApp.xml" afterPath="$PROJECT_DIR$/NewYorkPost/src/test/resources/NewYorkPostRunnerApp.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/AlertsTest.java" afterPath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/AlertsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/ButtonTest.java" afterPath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/ButtonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/PickerTest.java" afterPath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/PickerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/TextFieldsTest.java" afterPath="$PROJECT_DIR$/UiCatalog/src/test/java/iPhone/TextFieldsTest.java" />
     </list>
     <ignored path="Tablet-Automation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1035,7 +991,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485729925993</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="NYP MainMenu-1 Test">
+      <created>1485811445249</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485811445251</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1072,7 +1035,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="200" y="22" width="1366" height="721" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1084,7 +1047,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13670695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39586645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39586645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1121,7 +1084,8 @@
     <MESSAGE value="Alert Tests Added" />
     <MESSAGE value="NYP Framework Added" />
     <MESSAGE value="Fixed Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Structure" />
+    <MESSAGE value="NYP MainMenu-1 Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="NYP MainMenu-1 Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
