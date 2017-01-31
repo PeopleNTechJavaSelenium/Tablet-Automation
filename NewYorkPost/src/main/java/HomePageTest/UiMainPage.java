@@ -29,7 +29,7 @@ public class UiMainPage extends Base {
     @FindBy(xpath = "//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.Button")
     List<WebElement> alertTendingNews = new ArrayList<>();
 
-    String mainMenu1[] = {"TOP STORIES","SAVED ARTICLES","NEWS","METRO","PAGE SIX","SPORTS","BUSINESS","OPINION","ENTERTAINMENT","FASHION","LIVING","MEDIA","TECH","REAL ESTATE","PHOTOS","VIDEO","ABOUT"};
+    String mainMenuArr[] = {"TOP STORIES","SAVED ARTICLES","NEWS","METRO","PAGE SIX","SPORTS","BUSINESS","OPINION","ENTERTAINMENT","FASHION","LIVING","MEDIA","TECH","REAL ESTATE","PHOTOS","VIDEO","ABOUT"};
 
     public void setAlertTendingNews(String condition) {
         if (alertTendingNews.get(0).isDisplayed()) {
@@ -50,97 +50,88 @@ public class UiMainPage extends Base {
 
     public void getTopStories(){
         getMenu();
-        mainMenu.get(0).click();
+        scrollAndClickByName(mainMenuArr[0]);
         Assert.assertTrue(txtPageHeading.getText().contains("TOP STORIES"));
     }
     public void getSavedArticles(){
         getMenu();
-        mainMenu.get(1).click();
+        scrollAndClickByName(mainMenuArr[1]);
         Assert.assertTrue(txtPageHeading.getText().contains("SAVED ARTICLES"));
     }
     public void getNews(){
         getMenu();
-        mainMenu.get(2).click();
+        scrollAndClickByName(mainMenuArr[2]);
         Assert.assertTrue(txtPageHeading.getText().contains("NEWS"));
     }
     public void getMetro(){
         getMenu();
-        mainMenu.get(3).click();
+        scrollAndClickByName(mainMenuArr[3]);
         Assert.assertTrue(txtPageHeading.getText().contains("METRO"));
     }
     public void getPageSix(){
         getMenu();
-        mainMenu.get(4).click();
+        scrollAndClickByName(mainMenuArr[4]);
         Assert.assertTrue(imgPageHeading.getSize().width==229);
         Assert.assertTrue(imgPageHeading.getSize().height==54);
     }
     public void getSports(){
         getMenu();
-        mainMenu.get(5).click();
+        scrollAndClickByName(mainMenuArr[5]);
         Assert.assertTrue(txtPageHeading.getText().contains("SPORTS"));
     }
     public void getBusiness(){
         getMenu();
-        mainMenu.get(6).click();
+        scrollAndClickByName(mainMenuArr[6]);
         Assert.assertTrue(txtPageHeading.getText().contains("BUSINESS"));
     }
     public void getOpinion(){
         getMenu();
-        mainMenu.get(7).click();
+        scrollAndClickByName(mainMenuArr[7]);
         Assert.assertTrue(txtPageHeading.getText().contains("OPINION"));
     }
     public void getEntertainment(){
         getMenu();
-        mainMenu.get(8).click();
+        scrollAndClickByName(mainMenuArr[8]);
         Assert.assertTrue(txtPageHeading.getText().contains("ENTERTAINMENT"));
     }
     public void getFashion(){
         getMenu();
-        mainMenu.get(9).click();
+        scrollAndClickByName(mainMenuArr[9]);
         Assert.assertTrue(txtPageHeading.getText().contains("FASHION"));
     }
     public void getLiving(){
         getMenu();
-        mainMenu.get(10).click();
+        scrollAndClickByName(mainMenuArr[10]);
         Assert.assertTrue(txtPageHeading.getText().contains("LIVING"));
     }
     public void getMedia(){
         getMenu();
-        mainMenu.get(11).click();
+        scrollAndClickByName(mainMenuArr[11]);
         Assert.assertTrue(txtPageHeading.getText().contains("MEDIA"));
     }
     public void getTech(){
         getMenu();
-        ad.scrollTo(mainMenu1[12]);
-        clickByName(mainMenu1[12]);//mainMenu.get(12).click();
+        scrollAndClickByName(mainMenuArr[12]);
         Assert.assertTrue(txtPageHeading.getText().contains("TECH"));
     }
     public void getRealEstate(){
         getMenu();
-        ad.scrollTo(mainMenu1[13]);
-        clickByName(mainMenu1[13]);
-//        mainMenu.get(13).click();
+        scrollAndClickByName(mainMenuArr[13]);
         Assert.assertTrue(txtPageHeading.getText().contains("REAL ESTATE"));
     }
     public void getPhotots(){
         getMenu();
-        ad.scrollTo(mainMenu1[14]);
-        clickByName(mainMenu1[14]);
-//        mainMenu.get(14).click();
+        scrollAndClickByName(mainMenuArr[14]);
         Assert.assertTrue(txtPageHeading.getText().contains("PHOTOS"));
     }
     public void getVideo(){
         getMenu();
-        ad.scrollTo(mainMenu1[15]);
-        clickByName(mainMenu1[15]);
-//        mainMenu.get(15).click();
+        scrollAndClickByName(mainMenuArr[15]);
         Assert.assertTrue(txtPageHeading.getText().contains("VIDEO"));
     }
-    public void getAbout(){
+    public void getAbout() {
         getMenu();
-        ad.scrollTo(mainMenu1[16]);
-        clickByName(mainMenu1[16]);
-//        mainMenu.get(16).click();
+        scrollAndClickByName(mainMenuArr[16]);
         Assert.assertTrue(txtPageHeading.getText().contains("ABOUT"));
     }
 }

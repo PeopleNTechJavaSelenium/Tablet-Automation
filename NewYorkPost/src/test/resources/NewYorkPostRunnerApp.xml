@@ -12,7 +12,8 @@
 
     <test name="Test Main Menu" preserve-order="true">
         <classes>
-            <class name="HomePageTest.MainMenuTest"/>
+            <!--<class name="HomePageTest.SingleItemMainMenuTest"/>-->
+            <class name="HomePageTest.AllItemsMainMenuTest"/>
         </classes>
     </test>
 
