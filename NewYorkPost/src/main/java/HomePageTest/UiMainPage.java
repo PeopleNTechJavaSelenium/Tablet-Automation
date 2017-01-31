@@ -29,6 +29,8 @@ public class UiMainPage extends Base {
     @FindBy(xpath = "//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.Button")
     List<WebElement> alertTendingNews = new ArrayList<>();
 
+    String mainMenu1[] = {"TOP STORIES","SAVED ARTICLES","NEWS","METRO","PAGE SIX","SPORTS","BUSINESS","OPINION","ENTERTAINMENT","FASHION","LIVING","MEDIA","TECH","REAL ESTATE","PHOTOS","VIDEO","ABOUT"};
+
     public void setAlertTendingNews(String condition) {
         if (alertTendingNews.get(0).isDisplayed()) {
             switch (condition) {
@@ -109,27 +111,36 @@ public class UiMainPage extends Base {
     }
     public void getTech(){
         getMenu();
-        mainMenu.get(12).click();
+        ad.scrollTo(mainMenu1[12]);
+        clickByName(mainMenu1[12]);//mainMenu.get(12).click();
         Assert.assertTrue(txtPageHeading.getText().contains("TECH"));
     }
     public void getRealEstate(){
         getMenu();
-        mainMenu.get(13).click();
+        ad.scrollTo(mainMenu1[13]);
+        clickByName(mainMenu1[13]);
+//        mainMenu.get(13).click();
         Assert.assertTrue(txtPageHeading.getText().contains("REAL ESTATE"));
     }
     public void getPhotots(){
         getMenu();
-        mainMenu.get(14).click();
+        ad.scrollTo(mainMenu1[14]);
+        clickByName(mainMenu1[14]);
+//        mainMenu.get(14).click();
         Assert.assertTrue(txtPageHeading.getText().contains("PHOTOS"));
     }
     public void getVideo(){
         getMenu();
-        mainMenu.get(15).click();
+        ad.scrollTo(mainMenu1[15]);
+        clickByName(mainMenu1[15]);
+//        mainMenu.get(15).click();
         Assert.assertTrue(txtPageHeading.getText().contains("VIDEO"));
     }
     public void getAbout(){
         getMenu();
-        mainMenu.get(16).click();
+        ad.scrollTo(mainMenu1[16]);
+        clickByName(mainMenu1[16]);
+//        mainMenu.get(16).click();
         Assert.assertTrue(txtPageHeading.getText().contains("ABOUT"));
     }
 }

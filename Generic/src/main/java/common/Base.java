@@ -199,6 +199,9 @@ public class Base {
             System.err.println("No alert visible in 5 seconds");
         }
     }
+    public void clickByName(String locator){
+        ad.findElement(By.name(locator)).click();
+    }
 
 }
 

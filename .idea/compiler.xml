@@ -9,12 +9,15 @@
         <module name="Android" />
         <module name="Generic" />
         <module name="iOS" />
+        <module name="NewYorkPost" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Android" target="1.8" />
       <module name="Generic" target="1.7" />
       <module name="iOS" target="1.8" />
+      <module name="ios" target="1.8" />
+      <module name="NewYorkPost" target="1.8" />
       <module name="Tablet-Automation" target="1.5" />
     </bytecodeTargetLevel>
   </component>
